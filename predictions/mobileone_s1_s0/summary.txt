@@ -1,0 +1,32 @@
+checkpoint : runs/mobileone_s1_s0/best.pt
+subset     : all
+images     : 1079
+
+overall    IoU 0.9165   B-IoU 0.5849
+grades     good 862  fair 113  poor 104
+
+family        n      IoU    B-IoU
+LSSW         30   0.9834   0.5345
+LLES         30   0.9814   0.4691
+HSLS         36   0.9767   0.5792
+LSTG         24   0.9760   0.5704
+LNS          30   0.9729   0.6251
+LLWS         30   0.9581   0.6979
+GPS         312   0.9512   0.6417
+PS          321   0.9432   0.6001
+ISO          32   0.9042   0.6020
+GLLES        60   0.8897   0.5380
+GLP          38   0.8309   0.4614
+LP          136   0.7355   0.4764
+
+最差 10 張：
+  0.0856  LP      L45P650
+  0.1057  PS      S45P100
+  0.1211  LP      L40P100
+  0.1797  LP      L55P100
+  0.2239  LP      L50P650
+  0.2332  LP      L50P200
+  0.2579  LP      L45P200
+  0.2580  LP      L45P90
+  0.2734  LP      L50P400
+  0.2833  ISO     DS45

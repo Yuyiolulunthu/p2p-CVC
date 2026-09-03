@@ -1,0 +1,93 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# ML / experiment outputs
+checkpoints/
+runs/
+outputs/
+wandb/
+/.venv
+/.venv
+.venv/Lib/site-packages/networkx/algorithms/tests/test_dominance.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_dominating.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_efficiency.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_euler.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_graph_hashing.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_graphical.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_hierarchy.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_hybrid.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_isolate.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_link_prediction.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_lowest_common_ancestors.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_matching.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_max_weight_clique.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_mis.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_moral.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_node_classification.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_non_randomness.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_perfect_graph.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_planar_drawing.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_planarity.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_polynomials.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_reciprocity.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_regular.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_richclub.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_similarity.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_simple_paths.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_smallworld.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_smetric.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_sparsifiers.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_structuralholes.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_summarization.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_swap.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_threshold.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_time_dependent.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_tournament.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_triads.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_vitality.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_voronoi.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_walks.py
+.venv/Lib/site-packages/networkx/algorithms/tests/test_wiener.py
+.venv/Lib/site-packages/networkx/algorithms/threshold.py
+.venv/Lib/site-packages/networkx/algorithms/time_dependent.py
+.venv/Lib/site-packages/networkx/algorithms/tournament.py
+.venv/Lib/site-packages/networkx/algorithms/traversal/__init__.py
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/__init__.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/beamsearch.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/breadth_first_search.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/depth_first_search.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/edgebfs.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/__pycache__/edgedfs.cpython-312.pyc
+.venv/Lib/site-packages/networkx/algorithms/traversal/beamsearch.py
+*.pyc

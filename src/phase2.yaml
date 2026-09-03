@@ -1,0 +1,25 @@
+# Phase 0 鎖死的設定。以下項目一旦開始跑實驗就不准改,
+# 否則 Phase 1/2/3 的數字不可互相比較。
+pairs_file: pairs.json
+split_file: splits/split_seed0.json
+out_root: runs
+in_channels: 1
+
+crop_size: 512          # 整張訓練。crop 是 Phase 3 的實驗變因,不放進 Phase 1 baseline
+batch_size: 4           # 512x512 的記憶體是 256x256 的四倍
+epochs: 100
+patience: 20
+workers: 4
+
+border_band: 32         # Phase 3 邊界環帶寬度
+min_blob_area: 4        # FP blob 的最小面積門檻
+
+encoder: mit_b0
+encoder_weights: imagenet
+variant: v4            # 主推:T = LocalMean(I) + dT
+lambda_tv: 0.01        # 掃 {0, 1e-3, 1e-2, 1e-1} -> Table 4
+lambda_r: 0.0
+k_init: 10.0
+threshold_window: 31    # V4 的 local mean 視窗,應略大於 line pitch
+
+full_eval_every: 10

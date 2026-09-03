@@ -1,0 +1,24 @@
+
+pairs_file: pairs.json
+split_file: splits/split_seed0.json
+out_root: runs
+in_channels: 1
+
+crop_size: 512          
+batch_size: 4           # 512x512 的記憶體是 256x256 的四倍
+epochs: 100
+patience: 20
+workers: 4
+
+border_band: 32         # Phase 3 邊界環帶寬度
+min_blob_area: 4        # FP blob 的最小面積門檻
+
+encoder: mit_b0
+encoder_weights: imagenet
+variant: v0             # v0 = 直接輸出 binary(現行 baseline)
+lambda_tv: 0.0
+lambda_r: 0.0
+k_init: 10.0
+threshold_window: 31    # V4 的 local mean 視窗,應略大於 line pitch
+
+full_eval_every: 10

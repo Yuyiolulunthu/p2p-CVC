@@ -1,0 +1,24 @@
+# Phase 0 鎖死的設定。以下項目一旦開始跑實驗就不准改,
+# 否則 Phase 1/2/3 的數字不可互相比較。
+data_root: data
+split_file: splits/split_seed0.json
+out_root: runs
+in_channels: 1
+use_dom: false          # 若要把 DOM 當第二 channel,設 true 並改 in_channels: 2
+
+crop_size: 512
+batch_size: 8
+epochs: 100
+patience: 20
+workers: 4
+
+border_band: 32         # Phase 3 邊界環帶寬度
+min_blob_area: 4        # FP blob 的最小面積門檻
+
+encoder: resnet34
+encoder_weights: imagenet
+variant: v0             # v0 = 直接輸出 binary(現行 baseline)
+lambda_tv: 0.0
+lambda_r: 0.0
+k_init: 10.0
+threshold_window: 31    # V4 的 local mean 視窗,應略大於 line pitch
