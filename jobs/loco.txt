@@ -1,0 +1,12 @@
+--config configs/base.yaml --seed 0 --class 2ND --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_2ND
+--config configs/base.yaml --seed 0 --class 2ND_N --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_2ND_N
+--config configs/base.yaml --seed 0 --class E2E --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_E2E
+--config configs/base.yaml --seed 0 --class E2E_N --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_E2E_N
+--config configs/base.yaml --seed 0 --class H_shape --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_H_shape
+--config configs/base.yaml --seed 0 --class Length --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_Length
+--config configs/base.yaml --seed 0 --class Linearity --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_Linearity
+--config configs/base.yaml --seed 0 --class Number --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_Number
+--config configs/base.yaml --seed 0 --class Proximity_N --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_Proximity_N
+--config configs/base.yaml --seed 0 --class T_shape --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_T_shape
+--config configs/base.yaml --seed 0 --class Tiles --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_Tiles
+--config configs/base.yaml --seed 0 --class proximity --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name locoMNv3_proximity

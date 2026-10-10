@@ -1,0 +1,15 @@
+--config configs/base.yaml --seed 0 --set encoder=resnet34 lr=0.0002 epochs=100 --name resnet34_s0
+--config configs/base.yaml --seed 1 --set encoder=resnet34 lr=0.0002 epochs=100 --name resnet34_s1
+--config configs/base.yaml --seed 2 --set encoder=resnet34 lr=0.0002 epochs=100 --name resnet34_s2
+--config configs/base.yaml --seed 0 --set encoder=mobileone_s1 lr=0.0002 epochs=100 --name mobileone_s1_s0
+--config configs/base.yaml --seed 1 --set encoder=mobileone_s1 lr=0.0002 epochs=100 --name mobileone_s1_s1
+--config configs/base.yaml --seed 2 --set encoder=mobileone_s1 lr=0.0002 epochs=100 --name mobileone_s1_s2
+--config configs/base.yaml --seed 0 --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name timmmobilenetv3_large_100_s0
+--config configs/base.yaml --seed 1 --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name timmmobilenetv3_large_100_s1
+--config configs/base.yaml --seed 2 --set encoder=timm-mobilenetv3_large_100 lr=0.0002 epochs=100 --name timmmobilenetv3_large_100_s2
+--config configs/base.yaml --seed 0 --set encoder=efficientnet-b0 lr=0.0002 epochs=100 --name efficientnetb0_s0
+--config configs/base.yaml --seed 1 --set encoder=efficientnet-b0 lr=0.0002 epochs=100 --name efficientnetb0_s1
+--config configs/base.yaml --seed 2 --set encoder=efficientnet-b0 lr=0.0002 epochs=100 --name efficientnetb0_s2
+--config configs/base.yaml --seed 0 --set encoder=mit_b0 lr=0.0003 epochs=150 --name mit_b0_s0
+--config configs/base.yaml --seed 1 --set encoder=mit_b0 lr=0.0003 epochs=150 --name mit_b0_s1
+--config configs/base.yaml --seed 2 --set encoder=mit_b0 lr=0.0003 epochs=150 --name mit_b0_s2

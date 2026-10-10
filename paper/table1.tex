@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Encoder comparison on the random split. Mean $\pm$ sample standard deviation over three seeds.}
+\label{tab:encoders}
+\begin{tabular}{l r r r r r r r r r}
+\toprule
+Encoder & Params (M) & $n$ & IoU & BIoU & EPE & EPE p2g & CD MAE & CD bias & FP blob \\
+\midrule
+SegFormer (MiT-B0) & 5.55 & 3 & 0.9706\,$\pm$\,0.0001 & 0.6201\,$\pm$\,0.0027 & 0.537\,$\pm$\,0.002 & 0.531\,$\pm$\,0.003 & 5.57\,$\pm$\,0.17 & 0.74\,$\pm$\,0.42 & 155.8\,$\pm$\,8.8 \\
+EfficientNet-B0 & 6.25 & 3 & 0.9731\,$\pm$\,0.0016 & 0.6569\,$\pm$\,0.0078 & 0.489\,$\pm$\,0.028 & 0.496\,$\pm$\,0.038 & 5.06\,$\pm$\,0.24 & 0.91\,$\pm$\,0.55 & 140.0\,$\pm$\,12.5 \\
+MobileNetV3-Large & 6.69 & 3 & \textbf{0.9739\,$\pm$\,0.0007} & \textbf{0.6637\,$\pm$\,0.0009} & \textbf{0.477\,$\pm$\,0.011} & 0.499\,$\pm$\,0.020 & \textbf{4.81\,$\pm$\,0.13} & \textbf{0.67\,$\pm$\,0.29} & \textbf{132.4\,$\pm$\,0.5} \\
+MobileOne-S1 & 9.15 & 3 & 0.9711\,$\pm$\,0.0020 & 0.6311\,$\pm$\,0.0182 & 0.570\,$\pm$\,0.060 & 0.617\,$\pm$\,0.088 & 5.61\,$\pm$\,0.29 & 0.83\,$\pm$\,0.77 & 154.2\,$\pm$\,15.9 \\
+ResNet-34 & 24.43 & 3 & 0.9735\,$\pm$\,0.0003 & 0.6488\,$\pm$\,0.0033 & 0.489\,$\pm$\,0.010 & \textbf{0.489\,$\pm$\,0.011} & 5.11\,$\pm$\,0.10 & 1.03\,$\pm$\,0.22 & 150.4\,$\pm$\,3.6 \\
+\bottomrule
+\end{tabular}
+\end{table*}

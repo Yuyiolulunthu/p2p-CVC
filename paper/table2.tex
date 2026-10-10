@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Leave-one-class-out generalization. Each row trains on 11 pattern classes and tests on the held-out class.}
+\label{tab:loco}
+\begin{tabular}{l r r r r r r r r r}
+\toprule
+Encoder & Params (M) & $n$ & IoU & BIoU & EPE & EPE p2g & CD MAE & CD bias & FP blob \\
+\midrule
+MobileNetV3-Large / 2ND & 6.69 & 1 & 0.8640 & 0.3732 & 1.792 & 2.639 & 49.24 & -46.35 & 69.9 \\
+MobileNetV3-Large / 2ND_N & 6.69 & 1 & 0.6091 & 0.4494 & 2.527 & 3.884 & 145.99 & 144.67 & 63.9 \\
+MobileNetV3-Large / E2E & 6.69 & 1 & 0.9701 & 0.6036 & 0.596 & 0.654 & 8.72 & -3.88 & 95.4 \\
+MobileNetV3-Large / E2E_N & 6.69 & 1 & 0.8006 & 0.3488 & 2.110 & 2.414 & 33.26 & 15.05 & 189.2 \\
+MobileNetV3-Large / H_shape & 6.69 & 1 & 0.9925 & 0.6045 & 0.566 & 0.568 & 2.67 & -0.93 & 44.6 \\
+MobileNetV3-Large / Length & 6.69 & 1 & 0.9881 & 0.6309 & 0.766 & 1.011 & 4.33 & -0.55 & \textbf{37.7} \\
+MobileNetV3-Large / Linearity & 6.69 & 1 & 0.9717 & \textbf{0.6615} & \textbf{0.433} & \textbf{0.427} & 2.39 & -0.80 & 82.1 \\
+MobileNetV3-Large / Number & 6.69 & 1 & 0.9883 & 0.6588 & 0.458 & 0.473 & 3.83 & 1.97 & 130.6 \\
+MobileNetV3-Large / Proximity_N & 6.69 & 1 & 0.9074 & 0.4828 & 0.851 & 0.951 & 5.71 & -2.85 & 106.8 \\
+MobileNetV3-Large / T_shape & 6.69 & 1 & 0.9930 & 0.5934 & 0.598 & 0.654 & 2.37 & 0.80 & 58.9 \\
+MobileNetV3-Large / Tiles & 6.69 & 1 & 0.9543 & 0.6323 & 0.646 & 0.848 & 13.63 & 5.47 & 394.4 \\
+MobileNetV3-Large / proximity & 6.69 & 1 & 0.9714 & 0.5551 & 0.807 & 0.978 & 5.01 & -1.92 & 138.2 \\
+MobileOne-S1 / 2ND & 9.15 & 1 & 0.9848 & 0.4726 & 0.865 & 0.852 & 3.02 & \textbf{0.01} & 67.0 \\
+MobileOne-S1 / 2ND_N & 9.15 & 1 & 0.8233 & 0.4293 & 2.479 & 3.732 & 30.85 & 29.03 & 64.2 \\
+MobileOne-S1 / E2E & 9.15 & 1 & 0.9723 & 0.6010 & 0.547 & 0.539 & 8.00 & -3.83 & 92.8 \\
+MobileOne-S1 / E2E_N & 9.15 & 1 & 0.8742 & 0.3916 & 1.495 & 1.561 & 18.89 & 7.11 & 187.9 \\
+MobileOne-S1 / H_shape & 9.15 & 1 & 0.9926 & 0.6129 & 0.565 & 0.572 & 2.64 & -0.77 & 45.5 \\
+MobileOne-S1 / Length & 9.15 & 1 & 0.9316 & 0.5644 & 1.869 & 3.219 & 29.72 & -27.79 & 50.8 \\
+MobileOne-S1 / Linearity & 9.15 & 1 & 0.8154 & 0.5794 & 1.555 & 2.687 & 10.73 & 6.19 & 61.5 \\
+MobileOne-S1 / Number & 9.15 & 1 & 0.9883 & 0.6578 & 0.456 & 0.464 & 3.81 & 1.73 & 130.4 \\
+MobileOne-S1 / Proximity_N & 9.15 & 1 & 0.8855 & 0.4852 & 1.037 & 1.372 & 6.89 & -2.67 & 85.9 \\
+MobileOne-S1 / T_shape & 9.15 & 1 & \textbf{0.9931} & 0.5940 & 0.585 & 0.600 & \textbf{2.31} & 1.05 & 63.3 \\
+MobileOne-S1 / Tiles & 9.15 & 1 & 0.9470 & 0.5618 & 0.765 & 0.970 & 17.23 & 11.17 & 492.8 \\
+MobileOne-S1 / proximity & 9.15 & 1 & 0.9755 & 0.5692 & 0.760 & 0.904 & 4.09 & -1.89 & 117.5 \\
+\bottomrule
+\end{tabular}
+\end{table*}

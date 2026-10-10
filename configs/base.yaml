@@ -1,0 +1,39 @@
+# Phase 0 鎖死的設定。開始跑實驗後就不要再改，
+# 否則 Phase 1/2/3 的數字不可互相比較。
+
+# ---- 資料 ----
+data_root: dataset          # 底下要有 input/ 與 gt/
+input_dir: input
+gt_dir: gt
+split_file: splits/split_seed1.json
+split_seed: 1               # 與學長 main.py 的 seed 相同
+out_root: runs
+
+image_size: 512             # 原圖就是 512，不會真的 resize
+crop_size: 0                # 0 = 整張訓練。Phase 3 才改成 256
+crop_margin: 0
+
+# ---- 訓練 ----
+batch_size: 8
+epochs: 100
+patience: 20
+workers: 4
+in_channels: 1
+
+# ---- loss（與學長 main.py 的 loss_fn 一致）----
+w_bce: 1.0
+w_dice: 0.5
+
+# ---- 評估 ----
+border_band: 32             # Phase 3 邊界環帶寬度
+min_blob_area: 4            # FP blob 的最小面積門檻
+full_eval_every: 10         # 每 N 個 epoch 才算完整指標（EPE/fp_blobs 很貴）
+
+# ---- 模型 ----
+encoder: mobileone_s1
+encoder_weights: imagenet
+variant: v0                 # v0 = 直接輸出 binary
+lambda_tv: 0.0
+lambda_r: 0.0
+k_init: 10.0
+threshold_window: 51        # V4 的 local mean 視窗，須大於 pattern pitch

@@ -1,0 +1,7 @@
+encoder,input_size,encoder_params_M,total_params_M,GFLOPs,latency_ms,peak_mem_GB
+resnet34,512,21.28,24.43,61.91,11.49,0.19
+mit_b0,512,3.32,5.55,23.24,10.88,0.1
+mobileone_s1,512,3.54,9.15,39.42,13.29,0.14
+mobileone_s0,512,4.27,8.58,37.42,25.0,0.17
+efficientnet-b0,512,4.01,6.25,20.2,12.33,0.18
+timm-mobilenetv3_large_100,512,2.97,6.69,24.46,9.21,0.19

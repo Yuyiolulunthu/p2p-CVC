@@ -1,0 +1,31 @@
+# 環境（可重建）
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 預訓練權重快取（python -m src.prefetch_weights 可重建）
+weights_cache/
+
+# 資料集（不進版本庫）
+dataset/
+data/
+
+# 模型權重（2 GB；重跑一次只要 20 分鐘）
+*.pt
+*.pth
+*.ckpt
+
+# 舊的錯誤 GT 時代結果
+runs_archive/
+runs_wrongGT/
+runs_wrongGT_all/
+
+# Slurm / 暫存
+logs/
+slurm-*.out
+*.err
+.DS_Store
+.git.broken/
+predictions/

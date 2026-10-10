@@ -1,0 +1,7 @@
+encoder,input_size,batch,dtype,reparam_modules,encoder_params_M,total_params_M,GFLOPs,latency_ms,latency_p90_ms,img_per_s,peak_mem_GB
+resnet34,512,1,fp32,0,21.28,24.43,61.91,3.136,3.16,318.8,0.218
+mit_b0,512,1,fp32,0,3.32,5.55,23.24,5.084,5.113,196.7,0.252
+mobileone_s1,512,1,fp32,0,3.54,9.15,39.42,5.317,5.341,188.1,0.289
+mobileone_s0,512,1,fp32,0,4.27,8.58,37.42,10.307,10.344,97.0,0.186
+efficientnet-b0,512,1,fp32,0,4.01,6.25,20.2,5.183,5.212,192.9,0.201
+timm-mobilenetv3_large_100,512,1,fp32,0,2.97,6.69,24.46,4.261,4.294,234.7,0.199
